@@ -1,0 +1,294 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+*,
+body,
+html {
+  font-family: "Syne" !important;
+  max-width: 1600px;
+ 
+  margin: auto;
+
+ 
+}
+.flowbite-accordion {
+  border-bottom: none !important;
+}
+.container {
+  margin: auto;
+  max-width: 1250px;
+}
+.inner-cards {
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1.2);
+}
+.faq-cards {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1.2);
+}
+.placeholder-white::placeholder {
+  color: white;
+}
+.Toastify__toast-container {
+  z-index: 99999 !important;
+}
+
+.curveLineSection{
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+
+  }
+  
+  .curveLineSection::after{
+      content: "";
+      position: absolute;
+      bottom: -1.5rem;
+      left: 0;
+      width:100%;
+      height: 20px;
+      background-image: url(./assets/third-section/LineSection3.svg);
+      background-repeat: no-repeat;
+   
+
+  }
+
+  .card{
+    width: 400px;
+    height: 400px;
+  }
+  
+  @media only screen and (min-width:768px )  {
+    .card{
+      width: 300px !important;
+      height: 300px !important;
+    }
+
+  }
+
+  .section1-bg{
+    background-image: url(./assets/sectionBackground/section1-Bg.svg);
+    background-size: cover;
+    z-index: 1;
+    margin-bottom: -100px;
+    padding: 0rem 0rem 6rem 0rem; 
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    padding:0rem 0.75rem;
+  }
+
+  .section1-main{
+    display: flex;
+    text-align: left;
+    color: white;
+    padding: 1.25rem;
+   
+  }
+  .section1-shapes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0rem 8rem;
+
+  }
+  .section1-banner{
+    display: none;
+  }
+  .section1-shape-1{
+    display: block;
+  }
+  .section1-shape-2{
+    display: block;
+
+  }
+  .section1-col-2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  .section1-logo{
+    display: block;
+  }
+  .section1-heading{
+    font-size: 1.25rem; 
+    line-height: 1.75rem;
+    font-weight: bold;
+  }
+  .section1-subheading{
+   
+    font-size: 3rem;
+    line-height: 1rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 1.25rem 0rem;
+  }
+  .section1-para{
+    font-size: 20px;
+    width: full;
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
+  }
+  .section1-siteslogo{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 0.75rem;
+    padding: 2.5rem 0rem;
+
+  }
+ .google-logo{
+  width:auto;
+ }
+ .app-store{
+  width: auto;
+ }
+ .section1-hero{
+  display: block;
+ }
+  
+
+  
+  
+   @media only screen and (min-width:769px) {
+    .section1-bg{
+      padding: 2rem;
+    }
+
+    .section1-hero{
+    width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .section1-bg {
+      z-index: 2;
+      position: relative;
+      padding: 0rem 0rem 3rem 0rem;
+
+    }
+    .section1-main{
+      text-align: center;
+    }
+    .section1-shapes{
+      display: none;
+    }
+    .section1-shape-1{
+      display: none;
+    }
+    .section1-shape-2{
+      display: none;
+    }
+    .section1-col-2{
+      width: 100%;
+    }
+    .section1-logo{
+      display: none;
+    }
+    .section1-heading{
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    .section1-banner{
+      display: block;
+      margin: auto;
+    }
+    .section1-subheading{
+      font-size: 1.5rem; 
+      line-height: 2rem;
+    }
+    .section1-para{
+      font-size: 18px;
+    }
+    .google-logo{
+      width:50%;
+     }
+    .app-store{
+      width:50%;
+    }
+    .section1-hero{
+      display: none;
+    }
+    
+  }
+
+ 
+  
+  .section2-bg{
+    background-color: #587CFA;
+    padding: 6rem 0rem; 
+    box-sizing: border-box;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .section2-bg {
+      padding: 10rem 0rem; 
+    }
+  }
+  .section3-bg{
+    background-image: url(./assets/sectionBackground/section3-Bg.svg);
+    background-size: cover;
+    margin-top: -220px;
+    padding: 15rem 0rem 10rem 0rem;  
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 768px) {
+    .section3-bg {
+      background-image: url(./assets/sectionBackground/section3-MobBg.svg);
+      background-size: cover;
+      margin-top: -120px;
+      padding: 5rem 0rem 24rem 0rem; 
+    }
+  }
+
+  .section4-bg{
+    background-image: url(./assets/sectionBackground/section4-Bg.svg);
+    background-size: cover;
+    margin-top: -400px;
+    background-repeat: no-repeat;
+    padding: 30rem 0rem 20rem 0rem ; 
+    z-index: 10;
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .section4-bg {
+      background-image: url(./assets/sectionBackground/section4-MobBg.svg);
+      background-size: cover;
+      margin-top: -200x;
+      padding: 10rem 0rem 24rem 0rem ; 
+    }
+  }
+ 
+  .section5-bg{
+    background-color: #FF89BB;
+    margin-top: -310px;
+    padding: 20rem 0rem 10rem 0rem ; 
+    z-index: 0;
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+    .section5-bg {
+      padding: 20rem 0rem 5rem 0rem ; 
+    }
+  }
+  .footer{
+    background-image: url(./assets/sectionBackground/section5-Bg.svg);
+    background-size: cover;
+    margin-top: -120px;
+    background-repeat: no-repeat;
+    padding: 10rem 0rem 0rem 0rem ; 
+    z-index: 2;
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      background-image: url(./assets/sectionBackground/FooterMob.svg);
+      background-size: cover;
+      margin-top: -80px;
+      padding: 5rem 0rem 0rem 0rem ; 
+    }
+  }
